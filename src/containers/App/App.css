@@ -1,16 +1,9 @@
-.order-details{
-    width: 35%;
-    background: gray;
-    height: 700px;
-}
-
-.add-items{
-    width: 65%;
-    height: 700px;
-    background: cadetblue;
-}
-
-.App{
+.App {
     display: flex;
     height: 100%;
+}
+
+body {
+    background: url("https://s1.1zoom.me/big0/558/Hamburger_Fast_food_Buns_Closeup_595677_1280x720.jpg") no-repeat;
+    background-size: cover;
 }

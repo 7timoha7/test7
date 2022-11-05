@@ -1,28 +1,18 @@
 import React from 'react';
 import {MenuData} from "../../types";
 import './Menu.css'
+import Cards from "../Cards/Cards";
 
 interface Props {
-  menuArray: MenuData[]
+  menuArray: MenuData[];
   btnDelete: (name: string) => void;
 }
 
-const Menu:React.FC<Props> = (props) => {
-const Print = ()=>{
- return  props.menuArray.map((item)=>{
-    return (
-      <div className='item-box' key={item.name + 1} onClick={()=>props.btnDelete(item.name)}>
-        <p>{item.name}</p>
-        <p>{item.price}</p>
-      </div>
-    )
-  })
-}
-
+const Menu: React.FC<Props> = (props) => {
   return (
-    <div>
-      <div className= 'menu-box'>
-        {Print()}
+    <div className='add-items'>
+      <div>
+        <Cards menuArray={props.menuArray} btnDelete={props.btnDelete}/>
       </div>
     </div>
   );
