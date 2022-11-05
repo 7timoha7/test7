@@ -1,0 +1,16 @@
+.order-details{
+    width: 35%;
+    background: gray;
+    height: 700px;
+}
+
+.add-items{
+    width: 65%;
+    height: 700px;
+    background: cadetblue;
+}
+
+.App{
+    display: flex;
+    height: 100%;
+}

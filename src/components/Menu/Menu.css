@@ -1,0 +1,11 @@
+.menu-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item-box {
+    width: 20%;
+    border: 3px solid black;
+    margin: 20px;
+}
