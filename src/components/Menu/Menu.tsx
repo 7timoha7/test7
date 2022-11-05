@@ -4,14 +4,14 @@ import './Menu.css'
 
 interface Props {
   menuArray: MenuData[]
+  btnDelete: (name: string) => void;
 }
-
 
 const Menu:React.FC<Props> = (props) => {
 const Print = ()=>{
  return  props.menuArray.map((item)=>{
     return (
-      <div className='item-box' key={item.name + 1}>
+      <div className='item-box' key={item.name + 1} onClick={()=>props.btnDelete(item.name)}>
         <p>{item.name}</p>
         <p>{item.price}</p>
       </div>
